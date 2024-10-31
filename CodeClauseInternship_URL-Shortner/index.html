@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+</head>
+<body>
+    <h1>Welcome to the URL Shortener</h1>
+    <p>You are logged in as {{ current_user.username }}</p>
+    <form action="/shorten" method="post">
+        <label for="long_url">Enter URL to shorten:</label>
+        <input type="text" id="long_url" name="long_url" required>
+        <button type="submit">Shorten</button>
+    </form>
+    <a href="/logout">Logout</a>
+</body>
+</html>
